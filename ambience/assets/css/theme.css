@@ -9136,7 +9136,7 @@ a.link-on-bg:hover {
     .hero-section .figure-holder {
         min-height: 460px;
         background-position: right 0;
-        background-size: 360px auto;
+        background-size: 200px auto, 360px auto;
     }
 }
 @media (max-width: 767.98px) {
@@ -9146,7 +9146,7 @@ a.link-on-bg:hover {
     .hero-section .figure-holder {
         padding-bottom: 400px;
         background-position: center 400px;
-        background-size: 300px auto;
+        background-size: 180px auto, 300px auto;
     }
 }
 @media (max-width: 575.98px) {
@@ -9163,7 +9163,7 @@ a.link-on-bg:hover {
     .hero-section .figure-holder {
         padding-bottom: 400px;
         background-position: center 420px;
-        background-size: 300px auto;
+        background-size: 160px auto, 300px auto;
     }
     .logos-row {
         width: 90% !important;
