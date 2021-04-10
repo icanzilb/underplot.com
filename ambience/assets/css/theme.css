@@ -9150,6 +9150,9 @@ a.link-on-bg:hover {
     }
 }
 @media (max-width: 575.98px) {
+    .site-logo .logo-text {
+        font-size: 0.8em;
+    }
     .page-title,
     .site-headline {
         font-size: 2rem;
