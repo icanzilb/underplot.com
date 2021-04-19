@@ -8900,6 +8900,7 @@ a.link-on-bg:hover {
     position: relative;
     top: 3px;
     font-size: 1.5em;
+    text-align: center;
 }
 .site-logo .logo-text .alt {
     font-size: 1rem;
@@ -9027,8 +9028,14 @@ a.link-on-bg:hover {
 .site-tagline {
     font-size: 1.375rem;
 }
+.site-logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .hero-section .figure-holder {
-    background: url("../images/mill-gif.png") no-repeat right center, url("../images/hero-figure.png") no-repeat right center;
+    background: url("../images/mill-gif.png") no-repeat left center, url("../images/hero-figure.png") no-repeat left center;
     background-size: 220px auto, 520px auto;
     min-height: 450px;
 }
@@ -9135,8 +9142,11 @@ a.link-on-bg:hover {
 @media (max-width: 991.98px) {
     .hero-section .figure-holder {
         min-height: 460px;
-        background-position: right 0;
         background-size: 200px auto, 360px auto;
+    }
+    .logos-section .item img {
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 767.98px) {
@@ -9144,8 +9154,6 @@ a.link-on-bg:hover {
         text-align: center;
     }
     .hero-section .figure-holder {
-        padding-bottom: 400px;
-        background-position: center 400px;
         background-size: 180px auto, 300px auto;
     }
 }
@@ -9164,9 +9172,7 @@ a.link-on-bg:hover {
         text-align: center;
     }
     .hero-section .figure-holder {
-        padding-bottom: 400px;
-        background-position: center 420px;
-        background-size: 160px auto, 300px auto;
+        background: none;
     }
     .logos-row {
         width: 90% !important;
@@ -9199,5 +9205,5 @@ a.link-on-bg:hover {
     }
     .flipster__button--next {
         right: -2rem;
-    }
+    }    
 }
