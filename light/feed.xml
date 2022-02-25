@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Light</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Fri, 25 Feb 2022 09:39:26 +0100</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.dropbox.com/s/iekp493iaua5rwf/Light-1.0-11.dmg?dl=1" length="25146502" type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>1.0</title>
+            <pubDate>Fri, 25 Feb 2022 09:24:58 +0100</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://underplot.com/light/Light-1.0_10.dmg" length="25145754" type="application/octet-stream"/>
+        </item>
+    </channel>
+</rss>
