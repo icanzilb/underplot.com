@@ -8,6 +8,9 @@
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <sparkle:tags>
+                <sparkle:criticalUpdate></sparkle:criticalUpdate>
+            </sparkle:tags>
             <enclosure url="https://www.dropbox.com/s/471sxviayj5sehz/Light-1.0-12.dmg?dl=1" length="25145322" type="application/octet-stream"/>
         </item>
         <item>
