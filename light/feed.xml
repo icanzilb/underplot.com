@@ -4,12 +4,20 @@
         <title>Light</title>
         <item>
             <title>1.0</title>
+            <pubDate>Sat, 26 Feb 2022 13:14:23 +0100</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.dropbox.com/s/t0mdtqx8tedq2n9/Light-1.0-13.dmg?dl=1" length="25142866" type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Fri, 25 Feb 2022 10:18:31 +0100</pubDate>
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <sparkle:tags>
-                <sparkle:criticalUpdate></sparkle:criticalUpdate>
+                <sparkle:criticalUpdate/>
             </sparkle:tags>
             <enclosure url="https://www.dropbox.com/s/471sxviayj5sehz/Light-1.0-12.dmg?dl=1" length="25145322" type="application/octet-stream"/>
         </item>
