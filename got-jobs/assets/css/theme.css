@@ -9035,7 +9035,7 @@ a.link-on-bg:hover {
     margin-bottom: 2rem;
 }
 .hero-section .figure-holder {
-    background: url("../_got-jobs/hero-image.png") no-repeat left center;
+    background: url("../got-jobs/hero-image.png") no-repeat left center;
     background-size: 520px auto;
     min-height: 450px;
 }
