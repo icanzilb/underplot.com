@@ -9035,7 +9035,7 @@ a.link-on-bg:hover {
     margin-bottom: 2rem;
 }
 .hero-section .figure-holder {
-    background: url("../__tile/hero-window.gif") no-repeat left center;
+    background: url("../tile/hero-window.gif") no-repeat left center;
     background-size: 520px auto;
     min-height: 450px;
 }
