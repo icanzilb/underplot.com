@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tile | Forget debugging in the console</title>
-    <link>http://localhost:1313/</link>
+    <link>https://underplot.com/dataTile/</link>
     <description>Recent content on Tile | Forget debugging in the console</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Nov 2022 09:43:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 09:43:00 +0200</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beta Available Now!</title>
-      <link>http://localhost:1313/blog/2022-11-16-public-beta/</link>
+      <link>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</link>
       <pubDate>Wed, 16 Nov 2022 09:43:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/blog/2022-11-16-public-beta/</guid>
+      <guid>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</guid>
       <description>The public beta of dataTile is available today. Download on a mac computer and power up your development with beautiful real-time debug data!
 What&amp;rsquo;s available in the beta? Use dataTile as a beautiful log renderer, instead of using prints. Automatically captures relevant log lines and displays the data. Real-time text or chart visualization. Integrate in your Xcode workflow with no code changes. Download the beta version here</description>
     </item>
     
     <item>
       <title>Reroute print() to the unified log system</title>
-      <link>http://localhost:1313/blog/2022-10-16-pipe-print-to-logs/</link>
+      <link>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</link>
       <pubDate>Wed, 16 Nov 2022 09:42:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/blog/2022-10-16-pipe-print-to-logs/</guid>
+      <guid>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</guid>
       <description>If you&amp;rsquo;re usually using print(...) in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use os_log(...) instead.
 Luckily, you can easily create a simple replacement for print() if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!
 Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&amp;hellip;</description>
@@ -30,10 +30,10 @@ Additionally, you might have some print statements sprinkled here and there and 
     
     <item>
       <title>Download</title>
-      <link>http://localhost:1313/privacy/</link>
+      <link>https://underplot.com/dataTile/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>https://underplot.com/dataTile/privacy/</guid>
       <description>It is apsho’s policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to apsho.com (hereinafter, “us”, “we”, or “apsho.com”). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy (“Privacy Policy”) to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties.</description>
     </item>
     
