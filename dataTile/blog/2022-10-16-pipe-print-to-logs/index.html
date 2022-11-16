@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <title>Reroute print() to the unified log system</title>
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Themify -->
+  <link rel="stylesheet" href="http://localhost:1313/themify/themify.css">
+
+  <!-- Critical CSS -->
+  
+  <link href="http://localhost:1313/scss/critical.min.css" rel="stylesheet" />
+
+  <!-- Tile CSS -->
+  
+  <link href="http://localhost:1313/scss/tile.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon" />
+  
+</head>
+
+  <body>
+    <nav class="main-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="http://localhost:1313">
+      <img
+        src="http://localhost:1313/images/__tile/tile-logo.png"
+      />
+    </a>
+    <!-- Toggle Button -->
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mainNav"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-list" id="mainNav">
+      <!-- Navigation Links -->
+      
+      
+      <ul class="navbar-nav ml-auto">
+      
+        <li class="nav-item">
+          <a href="http://localhost:1313#hero" class="nav-link ">Home</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="http://localhost:1313#video" class="nav-link ">Video</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="http://localhost:1313#blog" class="nav-link ">Articles</a>
+        </li>
+      
+      </ul>
+      <div class="account-list list-inline">
+        <li class="list-inline-item">
+          <a href="#download" class="btn btn-sm btn-violate">
+            Download Beta
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div id="content">
+      
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    for(var i = 0; i < document.images.length; i++){
+      
+      const regexpSize = /width=([0-9]+)/;
+      const match = document.images[i].alt.match(regexpSize);
+      if (!!match) {
+        document.images[i].width = match[1];
+      }
+
+      const rounded = /rounded=([0-1]+)/;
+      const isRounded = document.images[i].alt.match(rounded);
+      if (!!isRounded && isRounded[1]=="0") {
+        document.images[i].style.borderRadius = "0";
+      }
+    }
+  });
+</script>
+
+<section class="page-header blog-single-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>
+          Reroute print() to the unified log system
+        </h2>
+        <div class="post-meta">
+          <ul>
+            <li>
+              <img src="http://localhost:1313/images/__tile/tile-profile-picture.png" alt="author-thumb" />
+            </li>
+            <li>
+              <h5>
+                Tile Articles
+              </h5>
+            </li>
+            <li>
+              November 16, 2022
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <article class="blog-single-post">
+          <p>If you&rsquo;re usually using <code>print(...)</code> in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use <code>os_log(...)</code> instead.</p>
+<p>Luckily, you can easily create a simple replacement for <code>print()</code> if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!</p>
+<p>Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&hellip;</p>
+<p>Let&rsquo;s have a look at a simple example of how to re-route that data to the logs:</p>
+<pre tabindex="0"><code>import os
+
+func print(_ text: some CustomStringConvertible) {
+  #if DEBUG
+  os_log(&#34;\(text.description, privacy: .public)&#34;)
+  #endif
+}
+</code></pre><p>Now we can easily print the offset of a table view and see some of the data in dataTile:</p>
+<pre tabindex="0"><code>func onScroll(_ offset: CGFloat) {
+  print(&#34;Offset: \(offset)&#34;)
+
+  if offset &gt;= 0 &amp;&amp; lastOffset &lt; 0 {
+    print(&#34;Baseline: ↗️&#34;)
+  }
+  if offset &lt; 0 &amp;&amp; lastOffset &gt;= 0 {
+    print(&#34;Baseline: ↘️&#34;)
+  }
+
+  lastOffset = offset
+}
+</code></pre><p>And, given dataTile is configured to capture data separated by a colon, scrolling through the table will automatically pop some tiles on screen:</p>
+<p><img src="../../images/blog/window-2-tiles.png" alt="width=400 dataTile window"></p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer-subscribe-title">
+          <h2>Download free dataTile beta:</h2>
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7k9S/OHY" width="100%"></iframe>
+        
+        
+
+        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
+        
+        <div style="height:100px;"></div>
+        
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-description">
+          <img src="http://localhost:1313/images/__tile/tile-logo.png" alt="logo" width="200">
+          <p>
+              </br>
+              Copyright Underplot ltd 2022
+          </p>
+          <ul class="footer-description-social">
+            <li>
+              <a href="https://twitter.com/icanzilb"><i class="ti-twitter-alt"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/icanzilb"><i class="ti-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <div class="footer-widget-list">
+            <ul>
+             <li><a href="http://localhost:1313">Home</a></li>
+             <li><a href="http://localhost:1313/blog">Announcements & Articles</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>External links</h4>
+          
+          <div class="footer-widget-list">
+            <ul>
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/community-support"><i class="ti-comments"></i>Community Support</a></li> 
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/beta-feedback"><i class="ti-comments"></i>Beta Feedback</a></li>
+              <li><a href="https://twitter.com/icanzilb"><i class="ti-link"></i>Social Media</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<link href="http://localhost:1313/scss/non-critical.min.css" rel="stylesheet" />
+
+<script src="http://localhost:1313/js/vendor.min.js"></script>
+
+
+<script src="http://localhost:1313/js/script.min.js"></script>
+
+  </body>
+</html>
