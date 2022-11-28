@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</loc>
-    <lastmod>2022-11-16T09:43:00+02:00</lastmod>
+    <loc>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</loc>
+    <lastmod>2022-11-28T09:43:00+02:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/</loc>
+    <lastmod>2022-11-28T09:43:00+02:00</lastmod>
+  </url><url>
+    <loc>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</loc>
     <lastmod>2022-11-16T09:43:00+02:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</loc>

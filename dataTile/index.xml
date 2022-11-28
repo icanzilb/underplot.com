@@ -6,7 +6,19 @@
     <description>Recent content on Tile | Forget debugging in the console</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Nov 2022 09:43:00 +0200</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Nov 2022 09:43:00 +0200</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataTile for Simulator is on TestFlight now!</title>
+      <link>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</link>
+      <pubDate>Mon, 28 Nov 2022 09:43:00 +0200</pubDate>
+      
+      <guid>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</guid>
+      <description>Today &amp;ldquo;dataTile for Simulator&amp;rdquo; is available as a public beta on TestFlight.
+Install the beta version from TestFlight
+The open beta will run through the month of December and all beta testers will have access to Pro features:
+What&amp;rsquo;s available in the beta? Running safely in the mac app sandbox. Reads logs from the Xcode Simulator in real time. Automatically captures relevant log lines and displays the data. Beautiful data visualization.</description>
+    </item>
+    
     <item>
       <title>Beta Available Now!</title>
       <link>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</link>
