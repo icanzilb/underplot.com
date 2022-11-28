@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>Download</title>
+  <title>Welcome to dataTile Beta!</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -33,7 +33,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <h1>Download</h1>
+        <h1 id="heading">TestFlight: dataTile Beta!</h1>
       </div>
     </div>
   </div>
@@ -45,26 +45,26 @@
       <div class="col-lg-10 mx-auto">
         <div class="page-content-wrapper">
           <p>
-            <a href="https://www.dropbox.com/s/g0z5uo60uqakdbv/Tile-0.92-b3.zip?dl=1" target="_blank">Download 0.92(3) (5MB)</a> (File hosted on Dropbox)
-            <br><br>
-            shasum -a 256 Tile-0.92-b3.zip <pre>b4169f5a971fefa4165d10a9bb8b0f71e82754906dcaeb3b92087f697fa96a5f</pre>
-            
-            <br><br>
-            
+            The latest beta version is fully compatible with the mac app sandbox and, therefore, allows for debugging only apps running in the Xcode Simulator.
+          </p>
+          <p>
+            Get the TestFlight build here: <a href="https://testflight.apple.com/join/Vf5t0mIo" target="_blank">https://testflight.apple.com/join/Vf5t0mIo</a>
+          </p>
+          <p>
+            <b>Note</b>: In the Sandboxed version, as part of your onboarding, you need to select your <code>/Applications/Xcode.app</code> installation to give dataTile access to the Simulator logs.
+          </p>
+                      
             <h3>Quick start:</h3>
             
 <strong>Integrate with Xcode:</strong>
 <p>
-    1. Copy Tile.app to your <code>/Applications</code> directory
+1. Open your Xcode project. Click <code>Project/Scheme/Edit Scheme...</code>
 </p>
 <p>
-2. Open your Xcode project. Click <code>Project/Scheme/Edit Scheme...</code>
+2. Click <code>In Run/Pre-actions/+</code> to add new pre-run script.
 </p>
 <p>
-3. Click <code>In Run/Pre-actions/+</code> to add new pre-run script.
-</p>
-<p>
-4. In the text field enter <code>open /Applications/Tile.app --args "Name of your app"</code>.
+3. In the text field enter <code>open /Applications/Tile.app --args "Name of your app"</code>.
 </p>
 <p>
 <img src="images/tile/pre-run-script.png" width=500 border="1" style="border: 1px solid gray;"/>
@@ -73,7 +73,7 @@
 
 
 <p>
-5. Run the project like normal. Check out the demo app in the download file for a small example.
+4. Run the project like usual. Check out the <code>Help/Sample App</code> menu for a sample project.
 </p>
 
             
@@ -95,6 +95,21 @@
 
 
 <script src="https://apsho-hugo.netlify.app/js/script.min.js"></script>
+
+<script>
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+if (getParameterByName('type') == "expired") {
+  document.getElementById('heading').innerText = "dataTile beta has\nmoved to TestFlight!";
+  console.log(document.getElementById('heading').innerText);
+}
+</script>
 
   </body>
 </html>
