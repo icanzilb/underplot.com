@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>Reroute print() to the unified log system</title>
+  <title>dataTile for Simulator — Press Kit</title>
 
 
   
@@ -79,85 +79,66 @@
     <div id="content">
       
 
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function(event) {
-    for(var i = 0; i < document.images.length; i++){
-      
-      const regexpSize = /width=([0-9]+)/;
-      const match = document.images[i].alt.match(regexpSize);
-      if (!!match) {
-        document.images[i].width = match[1];
-      }
-
-      const rounded = /rounded=([0-1]+)/;
-      const isRounded = document.images[i].alt.match(rounded);
-      if (!!isRounded && isRounded[1]=="0") {
-        document.images[i].style.borderRadius = "0";
-      }
-    }
-  });
-</script>
-
-<section class="page-header blog-single-header">
+<section class="page-header">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>
-          Reroute print() to the unified log system
-        </h2>
-        <div class="post-meta">
-          <ul>
-            <li>
-              <img src="https://underplot.com/dataTile/images/tile/tile-profile-picture.png" alt="author-thumb" />
-            </li>
-            <li>
-              <h5>
-                Tile Articles
-              </h5>
-            </li>
-            <li>
-              November 16, 2022
-            </li>
-          </ul>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1>dataTile for Simulator — Press Kit</h1>
+        <p>
+          
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="blog-single">
+<section class="page-content">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <article class="blog-single-post">
-          <p>If you&rsquo;re usually using <code>print(...)</code> in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use <code>os_log(...)</code> instead.</p>
-<p>Luckily, you can easily create a simple replacement for <code>print()</code> if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!</p>
-<p>Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&hellip;</p>
-<p>Let&rsquo;s have a look at a simple example of how to re-route that data to the logs:</p>
-<pre tabindex="0"><code>import os
+        <div class="page-content-wrapper">
+          <h2 id="meta-information">Meta Information</h2>
+<ul>
+<li><strong>Name</strong>: dataTile for Simulator</li>
+<li><strong>Available On</strong>: Mac App Store</li>
+<li><strong>Category</strong>: Developer Tools</li>
+<li><strong>Platform</strong>: macOS 12 or later</li>
+<li><strong>Flavors</strong>: dataTile Mini (free) and dataTile Pro (2 week trial, then paid subscription)</li>
+<li><strong>Download</strong>: <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603">https://apps.apple.com/app/datatile-for-simulator/id6444231603</a></li>
+<li><strong>Contact</strong>: support {at} underplot.com</li>
+</ul>
+<h2 id="description">Description</h2>
+<p><strong>dataTile for Simulator</strong> is an innovative Xcode companion-app to see debugging data in a beautiful and bold UI. Developers log debug data as usual using Apple&rsquo;s logging framework, and dataTile for Simulator automatically selects and displays the logs!</p>
+<p>It&rsquo;s a powerful native developer tool that is focused on making developers more productive while developing with Xcode and the Simulator. There is no need for third-party frameworks, hefty configurations, or changes to the code if already using Apple&rsquo;s unified logging in Swift or Objective-C.</p>
+<p>dataTile for Simulator helps developers <strong>reduce development time</strong>, debug with ease and track state effortlessly by autonomously detecting data and displaying:</p>
+<ul>
+<li>Text tile to show prominently text or numbers.</li>
+<li>Chart tile to plot numerical data over time.</li>
+<li>Switch tile to display boolean data.</li>
+<li>Progress tile for progress data over time.</li>
+<li>With more tiles on the way!</li>
+</ul>
+<p>The app is free to download with minimal functionality and PRO features can be unlocked via purchasing an in-app subscription.</p>
+<h3 id="datatile-mini-for-simulator">dataTile Mini for Simulator</h3>
+<p>The always-free dataTile <em>Mini</em> version of the app is ideal for working with just a few pieces of simple debug data for students and hobbyists who are learning iOS development.</p>
+<h3 id="datatile-pro-for-simulator">dataTile Pro for Simulator</h3>
+<p>A generous free-trial period unlocks the <strong>PRO</strong> features from within the app to enjoy unlimited tiles, smart tiles to do more with your data, persisting tile-layout per app, more log recognition patterns, and more.</p>
+<h2 id="assets">Assets</h2>
+<h3 id="icon">Icon</h3>
+<p><a href="/dataTile/press/dataTile-icon.png"><img src="/dataTile/press/dataTile-icon-thumb.png" alt="width=128 rounded=0 dataTile icon"></a></p>
+<h3 id="screenshots">Screenshots</h3>
+<p><a href="/dataTile/press/ide-screenshot-bright-tile.png"><img src="/dataTile/press/ide-screenshot-bright-tile-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<p><a href="/dataTile/press/Screenshots-1.png"><img src="/dataTile/press/Screenshots-1-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<p><a href="/dataTile/press/Screenshots-2.png"><img src="/dataTile/press/Screenshots-2-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<p><a href="/dataTile/press/Screenshots-3.png"><img src="/dataTile/press/Screenshots-3-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<p><a href="/dataTile/press/Screenshots-4.png"><img src="/dataTile/press/Screenshots-4-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<h3 id="videos">Videos</h3>
+<p><strong>Teaser:</strong></p>
+<p><a href="https://www.youtube.com/watch?v=rtLPefPdiGA"><img src="/dataTile/press/video-1-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
+<p><strong>2 min Walkthrough:</strong></p>
+<p><a href="https://www.youtube.com/watch?v=9h_qd3IFTIc"><img src="/dataTile/press/video-2-thumb.png" alt="width=220 rounded=0 dataTile icon"></a></p>
 
-func print(_ text: some CustomStringConvertible) {
-  #if DEBUG
-  os_log(&#34;\(text.description, privacy: .public)&#34;)
-  #endif
-}
-</code></pre><p>Now we can easily print the offset of a table view and see some of the data in dataTile:</p>
-<pre tabindex="0"><code>func onScroll(_ offset: CGFloat) {
-  print(&#34;Offset: \(offset)&#34;)
-
-  if offset &gt;= 0 &amp;&amp; lastOffset &lt; 0 {
-    print(&#34;Baseline: ↗️&#34;)
-  }
-  if offset &lt; 0 &amp;&amp; lastOffset &gt;= 0 {
-    print(&#34;Baseline: ↘️&#34;)
-  }
-
-  lastOffset = offset
-}
-</code></pre><p>And, given dataTile is configured to capture data separated by a colon, scrolling through the table will automatically pop some tiles on screen:</p>
-<p><img src="../../images/blog/window-2-tiles.png" alt="width=400 dataTile window"></p>
-
-        </article>
+        </div>
       </div>
     </div>
   </div>

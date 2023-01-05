@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</loc>
-    <lastmod>2022-11-28T09:43:00+02:00</lastmod>
+    <loc>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</loc>
     <lastmod>2022-11-28T09:43:00+02:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</loc>
@@ -18,6 +21,8 @@
     <lastmod>2022-10-31T20:33:11+06:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/categories/</loc>
+  </url><url>
+    <loc>https://underplot.com/dataTile/press/</loc>
   </url><url>
     <loc>https://underplot.com/dataTile/contact/</loc>
   </url><url>

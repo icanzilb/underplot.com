@@ -6,7 +6,18 @@
     <description>Recent content on Tile | Forget debugging in the console</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Nov 2022 09:43:00 +0200</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataTile for Simulator launches today!</title>
+      <link>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</guid>
+      <description>I&amp;rsquo;m glad to share that dataTile for Simulator is launching today on ProductHunt and the AppStore today!
+dataTile for Simulator is an Xcode companion app to see your debugging data in a beautiful and bold UI. Log your debug data as usual using Apple&amp;rsquo;s logging framework, and dataTile for Simulator will automatically select and display your logs!
+It&amp;rsquo;s a powerful native developer tool that is focused on making developers more productive while developing with Xcode and the Simulator.</description>
+    </item>
+    
     <item>
       <title>dataTile for Simulator is on TestFlight now!</title>
       <link>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</link>
@@ -38,6 +49,15 @@ What&amp;rsquo;s available in the beta? Use dataTile as a beautiful log renderer
       <description>If you&amp;rsquo;re usually using print(...) in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use os_log(...) instead.
 Luckily, you can easily create a simple replacement for print() if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!
 Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>dataTile for Simulator — Press Kit</title>
+      <link>https://underplot.com/dataTile/press/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataTile/press/</guid>
+      <description>Meta Information Name: dataTile for Simulator Available On: Mac App Store Category: Developer Tools Platform: macOS 12 or later Flavors: dataTile Mini (free) and dataTile Pro (2 week trial, then paid subscription) Download: https://apps.apple.com/app/datatile-for-simulator/id6444231603 Contact: support {at} underplot.com Description dataTile for Simulator is an innovative Xcode companion-app to see debugging data in a beautiful and bold UI. Developers log debug data as usual using Apple&amp;rsquo;s logging framework, and dataTile for Simulator automatically selects and displays the logs!</description>
     </item>
     
     <item>

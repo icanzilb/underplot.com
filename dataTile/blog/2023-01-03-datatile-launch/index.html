@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>Reroute print() to the unified log system</title>
+  <title>dataTile for Simulator launches today!</title>
 
 
   
@@ -103,7 +103,7 @@
     <div class="row">
       <div class="col-lg-12">
         <h2>
-          Reroute print() to the unified log system
+          dataTile for Simulator launches today!
         </h2>
         <div class="post-meta">
           <ul>
@@ -112,11 +112,11 @@
             </li>
             <li>
               <h5>
-                Tile Articles
+                Tile Press Release
               </h5>
             </li>
             <li>
-              November 16, 2022
+              January 3, 2023
             </li>
           </ul>
         </div>
@@ -130,32 +130,27 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <article class="blog-single-post">
-          <p>If you&rsquo;re usually using <code>print(...)</code> in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use <code>os_log(...)</code> instead.</p>
-<p>Luckily, you can easily create a simple replacement for <code>print()</code> if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!</p>
-<p>Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&hellip;</p>
-<p>Let&rsquo;s have a look at a simple example of how to re-route that data to the logs:</p>
-<pre tabindex="0"><code>import os
-
-func print(_ text: some CustomStringConvertible) {
-  #if DEBUG
-  os_log(&#34;\(text.description, privacy: .public)&#34;)
-  #endif
-}
-</code></pre><p>Now we can easily print the offset of a table view and see some of the data in dataTile:</p>
-<pre tabindex="0"><code>func onScroll(_ offset: CGFloat) {
-  print(&#34;Offset: \(offset)&#34;)
-
-  if offset &gt;= 0 &amp;&amp; lastOffset &lt; 0 {
-    print(&#34;Baseline: ↗️&#34;)
-  }
-  if offset &lt; 0 &amp;&amp; lastOffset &gt;= 0 {
-    print(&#34;Baseline: ↘️&#34;)
-  }
-
-  lastOffset = offset
-}
-</code></pre><p>And, given dataTile is configured to capture data separated by a colon, scrolling through the table will automatically pop some tiles on screen:</p>
-<p><img src="../../images/blog/window-2-tiles.png" alt="width=400 dataTile window"></p>
+          <p>I&rsquo;m glad to share that dataTile for Simulator is <strong>launching today</strong> on ProductHunt and the AppStore today!</p>
+<p><strong>dataTile for Simulator</strong> is an Xcode companion app to see your debugging data in a beautiful and bold UI. Log your debug data as usual using Apple&rsquo;s logging framework, and dataTile for Simulator will automatically select and display your logs!</p>
+<p>It&rsquo;s a powerful native developer tool that is focused on making developers more productive while developing with Xcode and the Simulator.</p>
+<p><img src="../../images/blog/ide-screenshot.png" alt="width=550 rounded=0 dataTile for Simulator available"></p>
+<p>There is no need for third-party frameworks, hefty configurations, or changes to your code if you use Apple&rsquo;s unified logging in Swift or Objective-C.</p>
+<p>dataTile for Simulator helps you <strong>reduce development time</strong>, debug with ease and track state effortlessly by autonomously detecting data and displaying:</p>
+<ul>
+<li>Text tile to show prominently text or numbers.</li>
+<li>Chart tile to plot numerical data over time.</li>
+<li>Switch tile to display boolean data.</li>
+<li>Progress tile for progress data over time.</li>
+<li>With more tiles on the way!</li>
+</ul>
+<p><img src="../../images/blog/multiple-tiles.png" alt="width=550 rounded=0 dataTile for Simulator available"></p>
+<h2 id="datatile-mini-for-simulator">dataTile Mini for Simulator</h2>
+<p>The always-free dataTile <em>Mini</em> version of the app is ideal for working with just a few pieces of simple debug data for students and hobbyists learning iOS development.</p>
+<h2 id="datatile-pro-for-simulator">dataTile Pro for Simulator</h2>
+<p>A generous free-trial period unlocks the <strong>PRO</strong> features from within the app to enjoy unlimited tiles, smart tiles to do more with your data, persisting tile-layout per app, more log recognition patterns, and more. (Not to mention the confetti when you upgrade.)</p>
+<p><img src="../../images/blog/upgrade-confetti.png" alt="width=550 rounded=0 dataTile for Simulator available"></p>
+<p>I&rsquo;m truly excited to see how you are going to use dataTile in your development workflow!</p>
+<p><a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12">Download on the Mac AppStore</a></p>
 
         </article>
       </div>
