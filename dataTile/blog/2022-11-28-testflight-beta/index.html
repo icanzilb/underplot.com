@@ -94,6 +94,13 @@
       if (!!isRounded && isRounded[1]=="0") {
         document.images[i].style.borderRadius = "0";
       }
+
+      const align = /align=center/;
+      const alignValue = document.images[i].alt.match(align);
+      if (!!alignValue) {
+        document.images[i].style.display = 'block';
+        document.images[i].style.margin = 'auto';
+      }
     }
   });
 </script>

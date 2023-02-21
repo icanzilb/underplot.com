@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 31 Oct 2022 20:33:11 +0600</lastBuildDate><atom:link href="https://underplot.com/dataTile/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>dataTile for Simulator 1.4</title>
+      <link>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</guid>
+      <description>dataTile for Simulator 1.4 is a minor update bringing a number of quality-of-life improvements to the app:
+When you relaunch your iOS app from Xcode — dataTile for Simulator detects the restart and resets the data in the currently visible tiles so you see only the data since the latest app launch. This improvement relieves the need to add pre-run script to projects — dataTile now detects relaunches and reset the data on its own.</description>
+    </item>
+    
+    <item>
       <title>dataTile for Simulator launches today!</title>
       <link>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
