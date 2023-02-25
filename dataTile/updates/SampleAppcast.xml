@@ -9,9 +9,21 @@
             <link>https://underplot.com/dataTile</link>
             <sparkle:version>21</sparkle:version>
             <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
-            <sparkle:fullReleaseNotesLink>
-                https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/
-            </sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+                <!DOCTYPE html>
+                <head>
+                    <style>
+                        body { font-family: Helvetica, Arial, Sans-Serif; }
+                    </style>
+                </head>
+                <body>
+                    <li> A new preferences tab allows users to turn on and off distinct features to reduce the app workload.
+                    <li> Log signpost intervals are now automatically displayed as a timer tile
+                    <li> Users can now turn on or off automatically detecting running apps in the Simulator
+                </body>
+                </html>
+            ]]>
+            </description>
             <pubDate>Fri, 24 Feb 2023 08:00:00 +0000</pubDate>
             <enclosure url="https://underplot.com/dataTile/updates/dataTile-1.6.app.zip" type="application/octet-stream"
               sparkle:edSignature="6DdA/BmWVEPCrlegCgkkAmfRnbW1+a/CnjSYe9KjNAgeLb9vBKhgnKdmKxKVA3cxwEfe2CbQk/plA3oANxmrBg==" length="9332747"
