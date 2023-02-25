@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>dataTile for Mac Changelog</title>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.6</title>
+            <link>https://underplot.com/dataTile</link>
+            <sparkle:version>1.6</sparkle:version>
+            <sparkle:fullReleaseNotesLink>
+                https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/
+            </sparkle:fullReleaseNotesLink>
+            <pubDate>Sat, 25 Feb 2023 08:00:00 +0000</pubDate>
+            <enclosure url="https://underplot.com/dataTile/updates/dataTile-1.6.app.zip" type="application/octet-stream"
+              sparkle:edSignature="6DdA/BmWVEPCrlegCgkkAmfRnbW1+a/CnjSYe9KjNAgeLb9vBKhgnKdmKxKVA3cxwEfe2CbQk/plA3oANxmrBg==" length="9332747"
+            />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+    </channel>
+</rss>
