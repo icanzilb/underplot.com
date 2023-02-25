@@ -78,7 +78,31 @@
 
     <div id="content">
       
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    for(var i = 0; i < document.images.length; i++){
+      
+      const regexpSize = /width=([0-9]+)/;
+      const match = document.images[i].alt.match(regexpSize);
+      if (!!match) {
+        document.images[i].width = match[1];
+      }
 
+      const rounded = /rounded=([0-1]+)/;
+      const isRounded = document.images[i].alt.match(rounded);
+      if (!!isRounded && isRounded[1]=="0") {
+        document.images[i].style.borderRadius = "0";
+      }
+
+      const align = /align=center/;
+      const alignValue = document.images[i].alt.match(align);
+      if (!!alignValue) {
+        document.images[i].style.display = 'block';
+        document.images[i].style.margin = 'auto';
+      }
+    }
+  });
+</script>
 <section class="page-header">
   <div class="container">
     <div class="row justify-content-center">
