@@ -7,7 +7,7 @@
         <item>
             <title>Version 1.6</title>
             <link>https://underplot.com/dataTile</link>
-            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <sparkle:version>1.6</sparkle:version>
             <sparkle:fullReleaseNotesLink>
                 https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/
             </sparkle:fullReleaseNotesLink>
