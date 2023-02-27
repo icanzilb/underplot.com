@@ -13,7 +13,7 @@
       <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</guid>
-      <description>Logging values and seeing them visualized in dataTile is pretty powerful but the core concept of the app really shines when a developer would automate logs that drives metrics over time.
+      <description>Logging values and seeing them visualized in dataTile is pretty powerful but the core concept of the app really shines when a developer would automate logs that drive metrics over time.
 Such metrics could be any value that changes over time — the size of the app cache, consumed RAM, or how many instances of a given class are created.
 In this article we&amp;rsquo;ll look into logging how many times a SwiftUI view is re-created.</description>
     </item>
