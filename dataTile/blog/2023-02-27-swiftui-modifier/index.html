@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <title>Debug SwiftUI with a custom view modifier</title>
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Themify -->
+  <link rel="stylesheet" href="https://underplot.com/dataTile/themify/themify.css">
+
+  <!-- Critical CSS -->
+  
+  <link href="https://underplot.com/dataTile/scss/critical.min.css" rel="stylesheet" />
+
+  <!-- Tile CSS -->
+  
+  <link href="https://underplot.com/dataTile/scss/tile.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  
+</head>
+
+  <body>
+    <nav class="main-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="https://underplot.com/dataTile/">
+      <img
+        src="https://underplot.com/dataTile/images/tile/tile-logo.png"
+      />
+    </a>
+    <!-- Toggle Button -->
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mainNav"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-list" id="mainNav">
+      <!-- Navigation Links -->
+      
+      
+      <ul class="navbar-nav ml-auto">
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#hero" class="nav-link ">Home</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#video" class="nav-link ">Video</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#blog" class="nav-link ">Articles</a>
+        </li>
+      
+      </ul>
+      <div class="list-inline">
+        <li>
+          <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&mt=12">
+            <img width="160" src="/dataTile/images/download.svg">
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div id="content">
+      
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    for(var i = 0; i < document.images.length; i++){
+      
+      const regexpSize = /width=([0-9]+)/;
+      const match = document.images[i].alt.match(regexpSize);
+      if (!!match) {
+        document.images[i].width = match[1];
+      }
+
+      const rounded = /rounded=([0-1]+)/;
+      const isRounded = document.images[i].alt.match(rounded);
+      if (!!isRounded && isRounded[1]=="0") {
+        document.images[i].style.borderRadius = "0";
+      }
+
+      const align = /align=center/;
+      const alignValue = document.images[i].alt.match(align);
+      if (!!alignValue) {
+        document.images[i].style.display = 'block';
+        document.images[i].style.margin = 'auto';
+      }
+    }
+  });
+</script>
+
+<style>pre {padding: 8px;border-radius: 4px;}</style>
+
+<section class="page-header blog-single-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>
+          Debug SwiftUI with a custom view modifier
+        </h2>
+        <div class="post-meta">
+          <ul>
+            <li>
+              <img src="https://underplot.com/dataTile/images/tile/tile-profile-picture.png" alt="author-thumb" />
+            </li>
+            <li>
+              <h5>
+                Code Showcase
+              </h5>
+            </li>
+            <li>
+              February 27, 2023
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <article class="blog-single-post">
+          <p>Logging values and seeing them visualized in <a href="https://underplot.com/dataTile#download">dataTile</a> is pretty powerful but the core concept of the app really shines when a developer would automate logs that drives metrics over time.</p>
+<p>Such metrics could be any value that changes over time — the size of the app cache, consumed RAM, or how many instances of a given class are created.</p>
+<p>In this article we&rsquo;ll look into logging how many times a SwiftUI view is re-created. This comes handy when you&rsquo;re trying to track unexpected changes that trigger recreating your SwiftUI views.</p>
+<h3 id="swiftui-view-modifier-counter">SwiftUI view modifier counter</h3>
+<p>We will create a view modifier that counts how many times it&rsquo;s been called. We&rsquo;ll offload the logging to a custom dispatch queue called <code>debugRenderQueue</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">let</span> debugRenderQueue = DispatchQueue(label: <span style="color:#e6db74">&#34;debugRenderQueue&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> debugRenderCounts = [String: Int]()
+</span></span></code></pre></div><p><code>debugRenderCounts</code> will hold count for each of the unique call sites where the custom view modifier is used in code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">View</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">debugRender</span>(
+</span></span><span style="display:flex;"><span>    named: String? = <span style="color:#66d9ef">nil</span>, 
+</span></span><span style="display:flex;"><span>    file: StaticString = <span style="color:#66d9ef">#file</span>, 
+</span></span><span style="display:flex;"><span>    line: UInt = <span style="color:#66d9ef">#line</span>) -&gt; some View {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// implementation below</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The developer can give the counter a name via the <code>named</code> parameter or pass no parameters at all and the counter will use the file name and line to uniquely identify the modifier call site.</p>
+<p>Finally, we will asynchronously increment the current counter and log the value; then return the view unchanged:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>debugRenderQueue.async {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> id = named ?? <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>file<span style="color:#e6db74">)</span><span style="color:#e6db74">:</span><span style="color:#e6db74">\(</span>line<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    debugRenderCounts[id, <span style="color:#66d9ef">default</span>: <span style="color:#ae81ff">0</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    os_log(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>id<span style="color:#e6db74">)</span><span style="color:#e6db74">: </span><span style="color:#e6db74">\(</span>debugRenderCounts[id]<span style="color:#f92672">!</span><span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">self</span>
+</span></span></code></pre></div><p>Now let&rsquo;s give this new modifier a try.</p>
+<h3 id="inspecting-view-render-count-with-debugrender">Inspecting view render count with <code>debugRender()</code></h3>
+<p>Let&rsquo;s take a simple SwiftUI view that renders a clock driven by a <code>Timer</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">ContentView</span>: View {
+</span></span><span style="display:flex;"><span>  @State <span style="color:#66d9ef">var</span> timer = Timer.publish(every: <span style="color:#ae81ff">0.1</span>, on: .main, <span style="color:#66d9ef">in</span>: .<span style="color:#66d9ef">default</span>)
+</span></span><span style="display:flex;"><span>    .autoconnect()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  @State <span style="color:#66d9ef">var</span> time = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> body: some View {
+</span></span><span style="display:flex;"><span>    VStack {
+</span></span><span style="display:flex;"><span>      Text(<span style="color:#e6db74">&#34;Current time:&#34;</span>)
+</span></span><span style="display:flex;"><span>      Text(time).bold()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    .onReceive(timer) { d <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>      time = d.formatted(date: .omitted, time: .standard)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The timer updates the <code>time</code> state property with the current time 10 times per second, the view then picks up the new state and renders the time on screen:</p>
+<p><img src="../../images/blog/clock.gif" alt="width=226 align=center rounded=0 Clock ticking"></p>
+<p>When it comes to improving the performance of your app — you might want to verify if the view is redrawn 10 per second (as often as you update the <code>time</code> property) or just once when the <code>time</code> property <em>actually</em> changes value.</p>
+<p>This is where using the new modifier from above comes handy. If you add the <code>debugRender()</code> modifier you&rsquo;ll see the updates in dataTile right away:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Text(time).bold()
+</span></span><span style="display:flex;"><span>  .debugRender(named: <span style="color:#e6db74">&#34;Timer&#34;</span>)
+</span></span></code></pre></div><p><img src="../../images/blog/clock-updates-dataTile.gif" alt="width=537 align=center rounded=0 Clock ticking"></p>
+<p>And to make the data even easier to read — click the tile menu and select &ldquo;View as chart&rdquo; and then click on the tile subtitle to see how many logs per second it displays:</p>
+<p><img src="../../images/blog/clock-chart.png" alt="width=537 align=center rounded=0 Clock ticking"></p>
+<p>And now you have your answer — the tile updates once per second, therefore SwiftUI only recreates the view when the state actually changes.</p>
+<p>What other SwiftUI view modifiers that talk to dataTile would you like to use? Get in touch on <a href="https://twitter.com/icanzilb">https://twitter.com/icanzilb</a> or <a href="https://mastodon.social/@icanzilb">https://mastodon.social/@icanzilb</a>.</p>
+<hr>
+<p>Download <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12">dataTile for Simulator</a> today.</p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer-subscribe-title">
+          <h2>Subscribe for dataTile updates:</h2>
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7k9S/OHY" width="100%"></iframe>
+                
+        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
+        
+        <div style="height:100px;"></div>
+        
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-description">
+          <img src="https://underplot.com/dataTile/images/tile/tile-logo.png" alt="logo" width="200">
+          <p>
+              </br>
+              Copyright Underplot ltd 2022
+          </p>
+          <ul class="footer-description-social">
+            <li>
+              <a href="https://twitter.com/icanzilb"><i class="ti-twitter-alt"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/icanzilb"><i class="ti-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <div class="footer-widget-list">
+            <ul>
+              <li><a href="https://underplot.com/dataTile/">Home</a></li>
+              <li><a href="https://underplot.com/dataTile/blog">Announcements & Articles</a></li>
+              <li><a href="https://underplot.com/dataTile/press">Press Kit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>External links</h4>
+          
+          <div class="footer-widget-list">
+            <ul>
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/community-support"><i class="ti-comments"></i>Community Support</a></li> 
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/beta-feedback"><i class="ti-comments"></i>Beta Feedback</a></li>
+              <li><a href="https://twitter.com/icanzilb"><i class="ti-link"></i>Social Media</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<link href="https://underplot.com/dataTile/scss/non-critical.min.css" rel="stylesheet" />
+
+<script src="https://underplot.com/dataTile/js/vendor.min.js"></script>
+
+
+<script src="https://underplot.com/dataTile/js/script.min.js"></script>
+
+  </body>
+</html>
