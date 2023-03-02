@@ -6,7 +6,19 @@
     <description>Recent content on Tile | Forget debugging in the console</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataTile for Simulator 1.5</title>
+      <link>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</guid>
+      <description>dataTile for Simulator 1.5 is a minor update bringing the following new features:
+dataTile for Simulator would now track signpost intervals in Apple&amp;rsquo;s unified log and visualize them in a new kind of timer tile. Repeating intervals display the total time and the number of repeats.
+Use Apple&amp;rsquo;s os_signpost or OSLogger APIs to track intervals, like so:
+os_signpost(.begin, log: log, name: &amp;#34;My Activity&amp;#34;) ... os_signpost(.end, log: log, name: &amp;#34;My Activity&amp;#34;) A new preferences tab called &amp;ldquo;Features&amp;rdquo; allows users to turn on and off features.</description>
+    </item>
+    
     <item>
       <title>Debug SwiftUI with a custom view modifier</title>
       <link>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</link>

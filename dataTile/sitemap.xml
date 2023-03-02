@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</loc>
-    <lastmod>2023-02-27T00:00:00+00:00</lastmod>
+    <loc>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</loc>

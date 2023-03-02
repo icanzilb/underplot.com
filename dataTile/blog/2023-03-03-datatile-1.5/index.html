@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <title>dataTile for Simulator 1.5</title>
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Themify -->
+  <link rel="stylesheet" href="https://underplot.com/dataTile/themify/themify.css">
+
+  <!-- Critical CSS -->
+  
+  <link href="https://underplot.com/dataTile/scss/critical.min.css" rel="stylesheet" />
+
+  <!-- Tile CSS -->
+  
+  <link href="https://underplot.com/dataTile/scss/tile.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  
+  
+  <meta name="google-site-verification" content="-MFTpOm_Rb_3M7QyUEMHNnp0MXGQHz54IgmPowKs4U8" />
+</head>
+
+  <body>
+    <nav class="main-nav navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="https://underplot.com/dataTile/">
+      <img
+        src="https://underplot.com/dataTile/images/tile/tile-logo.png"
+      />
+    </a>
+    <!-- Toggle Button -->
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mainNav"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-list" id="mainNav">
+      <!-- Navigation Links -->
+      
+      
+      <ul class="navbar-nav ml-auto">
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#hero" class="nav-link ">Home</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#video" class="nav-link ">Video</a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="https://underplot.com/dataTile/#blog" class="nav-link ">Articles</a>
+        </li>
+      
+      </ul>
+      <div class="list-inline">
+        <li>
+          <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&mt=12">
+            <img width="160" src="/dataTile/images/download.svg">
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div id="content">
+      
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    for(var i = 0; i < document.images.length; i++){
+      
+      const regexpSize = /width=([0-9]+)/;
+      const match = document.images[i].alt.match(regexpSize);
+      if (!!match) {
+        document.images[i].width = match[1];
+      }
+
+      const rounded = /rounded=([0-1]+)/;
+      const isRounded = document.images[i].alt.match(rounded);
+      if (!!isRounded && isRounded[1]=="0") {
+        document.images[i].style.borderRadius = "0";
+      }
+
+      const align = /align=center/;
+      const alignValue = document.images[i].alt.match(align);
+      if (!!alignValue) {
+        document.images[i].style.display = 'block';
+        document.images[i].style.margin = 'auto';
+      }
+    }
+  });
+</script>
+
+<style>pre {padding: 8px;border-radius: 4px;}</style>
+
+<section class="page-header blog-single-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>
+          dataTile for Simulator 1.5
+        </h2>
+        <div class="post-meta">
+          <ul>
+            <li>
+              <img src="https://underplot.com/dataTile/images/tile/tile-profile-picture.png" alt="author-thumb" />
+            </li>
+            <li>
+              <h5>
+                Tile Press Release
+              </h5>
+            </li>
+            <li>
+              March 2, 2023
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <article class="blog-single-post">
+          <p><img src="../../images/blog/version-1.5.png" alt="width=300 align=center rounded=0 Version 1.5"></p>
+<p><strong>dataTile for Simulator 1.5</strong> is a minor update bringing the following new features:</p>
+<ol>
+<li>
+<p>dataTile for Simulator would now track signpost intervals in Apple&rsquo;s unified log and visualize them in a new kind of <strong>timer tile</strong>. Repeating intervals display the total time and the number of repeats.</p>
+<p>Use Apple&rsquo;s <code>os_signpost</code> or <code>OSLogger</code> APIs to track intervals, like so:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>os_signpost(.begin, log: log, name: <span style="color:#e6db74">&#34;My Activity&#34;</span>)
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>os_signpost(.end, log: log, name: <span style="color:#e6db74">&#34;My Activity&#34;</span>)
+</span></span></code></pre></div><p><img src="../../images/blog/timer-tiles.gif" alt="width=622 align=center rounded=0 New timer tiles"></p>
+<ol start="2">
+<li>A new preferences tab called &ldquo;<strong>Features</strong>&rdquo; allows users to turn on and off features. This is the case for some features that require more computing power than others:</li>
+</ol>
+<p><img src="../../images/blog/features-tab.png" alt="width=550 align=center rounded=0 Preferences tab to turn features on and off"></p>
+<ol start="3">
+<li>
+<p>Detecting the running apps in the Xcode Simulator can something be slow upon app launch and if you don&rsquo;t often make use of that feature, you <strong>can now turn it off</strong> and in that case the Welcome Window will only list your recently opened apps.</p>
+</li>
+<li>
+<p>Further <strong>improvements</strong> to the Knowledge Base content and the text across the app.</p>
+</li>
+</ol>
+<hr>
+<p>Enjoy <strong>dataTile for Simulator 1.5</strong>!</p>
+<p><a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12"><img src="../../images/download.png" alt="width=157 align=center rounded=0 Version 1.5"></a></p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer-subscribe-title">
+          <h2>Subscribe for dataTile updates:</h2>
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7k9S/OHY" width="100%"></iframe>
+                
+        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
+        
+        <div style="height:100px;"></div>
+        
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-description">
+          <img src="https://underplot.com/dataTile/images/tile/tile-logo.png" alt="logo" width="200">
+          <p>
+              </br>
+              Copyright Underplot ltd 2022
+          </p>
+          <ul class="footer-description-social">
+            <li>
+              <a href="https://twitter.com/icanzilb"><i class="ti-twitter-alt"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/icanzilb"><i class="ti-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>Sitemap</h4>
+          <div class="footer-widget-list">
+            <ul>
+              <li><a href="https://underplot.com/dataTile/">Home</a></li>
+              <li><a href="https://underplot.com/dataTile/blog">Announcements & Articles</a></li>
+              <li><a href="https://underplot.com/dataTile/press">Press Kit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-widget">
+          <h4>External links</h4>
+          
+          <div class="footer-widget-list">
+            <ul>
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/community-support"><i class="ti-comments"></i>Community Support</a></li> 
+              <li><a href="https://github.com/icanzilb/dataTile/discussions/categories/beta-feedback"><i class="ti-comments"></i>Beta Feedback</a></li>
+              <li><a href="https://twitter.com/icanzilb"><i class="ti-link"></i>Social Media</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<link href="https://underplot.com/dataTile/scss/non-critical.min.css" rel="stylesheet" />
+
+<script src="https://underplot.com/dataTile/js/vendor.min.js"></script>
+
+
+<script src="https://underplot.com/dataTile/js/script.min.js"></script>
+
+  </body>
+</html>
