@@ -26,6 +26,7 @@
   
 </head>
 
+  <meta name="google-site-verification" content="-MFTpOm_Rb_3M7QyUEMHNnp0MXGQHz54IgmPowKs4U8" />
   <body>
     <nav class="main-nav navbar navbar-expand-lg">
   <div class="container-fluid">
@@ -184,7 +185,7 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The timer updates the <code>time</code> state property with the current time 10 times per second, the view then picks up the new state and renders the time on screen:</p>
+</span></span></code></pre></div><p>The timer updates the &rsquo;time&rsquo; state property with the current time 10 times per second, and the view picks up the new state and displays the time:</p>
 <p><img src="../../images/blog/clock.gif" alt="width=226 align=center rounded=0 Clock ticking"></p>
 <p>When it comes to improving the performance of your app — you might want to verify if the view is redrawn 10 per second (as often as you update the <code>time</code> property) or just once when the <code>time</code> property <em>actually</em> changes value.</p>
 <p>This is where using the new modifier from above comes handy. If you add the <code>debugRender()</code> modifier you&rsquo;ll see the updates in dataTile right away:</p>
