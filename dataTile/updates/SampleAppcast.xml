@@ -7,7 +7,7 @@
         <item>
             <title>Version 1.6</title>
             <link>https://underplot.com/dataTile</link>
-            <sparkle:version>21</sparkle:version>
+            <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
             <description><![CDATA[
                 <!DOCTYPE html>
@@ -17,16 +17,15 @@
                     </style>
                 </head>
                 <body>
-                    <li> A new preferences tab allows users to turn on and off distinct features to reduce the app workload.
-                    <li> Log signpost intervals are now automatically displayed as a timer tile
-                    <li> Users can now turn on or off automatically detecting running apps in the Simulator
+                    <li> Improved open experience, "Add new app..." now offers autocompletion based on the currently running apps on your computer.
+                    <li> File/Recent sub-menu now offers a list of the recently opened apps by name and log files. 
                 </body>
                 </html>
             ]]>
             </description>
-            <pubDate>Fri, 24 Feb 2023 08:00:00 +0000</pubDate>
-            <enclosure url="https://underplot.com/dataTile/updates/dataTile-1.6.app.zip" type="application/octet-stream"
-              sparkle:edSignature="6DdA/BmWVEPCrlegCgkkAmfRnbW1+a/CnjSYe9KjNAgeLb9vBKhgnKdmKxKVA3cxwEfe2CbQk/plA3oANxmrBg==" length="9332747"
+            <pubDate>Sun, 5 Mar 2023 08:00:00 +0000</pubDate>
+            <enclosure url="https://underplot.com/dataTile/updates/dataTile-1.6-22.zip" type="application/octet-stream"
+              sparkle:edSignature="33t730zsZA9gPY6UCtnT34tebOA4haBZLpN/iufmF+eA6cstUy2HFGVmVDmwn0tVZsddxDf6ZsSxxkIBuWWmCw==" length="9663249"
             />
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
         </item>
