@@ -6,7 +6,17 @@
     <description>Recent content on Tile | Forget debugging in the console</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataTile for Simulator 1.6</title>
+      <link>https://underplot.com/dataTile/blog/2023-03-23-datatile-1.6/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataTile/blog/2023-03-23-datatile-1.6/</guid>
+      <description>dataTile for Simulator 1.6 is a minor update bringing the following new features:
+The &amp;ldquo;Add new app&amp;rdquo; window now offers autocompletion features that searches in the list of recently used apps and the list of installed apps in the currently running Simulator. Quality of life improvements to the behavior in Welcome window and New App window. Enjoy dataTile for Simulator 1.6!</description>
+    </item>
+    
     <item>
       <title>dataTile for Simulator 1.5</title>
       <link>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</link>
