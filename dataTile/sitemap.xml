@@ -2,46 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://underplot.com/dataTile/blog/2023-03-23-datatile-1.6/</loc>
+    <loc>https://underplot.com/dataFude/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://underplot.com/dataFude/blog/2023-04-11-datatile-1.7/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://underplot.com/dataFude/blog/2023-03-23-datatile-1.6/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/</loc>
-    <lastmod>2023-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</loc>
+    <loc>https://underplot.com/dataFude/blog/2023-03-03-datatile-1.5/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</loc>
+    <loc>https://underplot.com/dataFude/blog/2023-02-27-swiftui-modifier/</loc>
     <lastmod>2023-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</loc>
+    <loc>https://underplot.com/dataFude/blog/2023-02-20-datatile-1.4/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</loc>
+    <loc>https://underplot.com/dataFude/blog/2023-01-03-datatile-launch/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</loc>
+    <loc>https://underplot.com/dataFude/blog/2022-11-28-testflight-beta/</loc>
     <lastmod>2022-11-28T09:43:00+02:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</loc>
+    <loc>https://underplot.com/dataFude/blog/2022-11-16-public-beta/</loc>
     <lastmod>2022-11-16T09:43:00+02:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</loc>
+    <loc>https://underplot.com/dataFude/blog/2022-10-16-pipe-print-to-logs/</loc>
     <lastmod>2022-11-16T09:42:00+02:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/blog/</loc>
+    <loc>https://underplot.com/dataFude/blog/</loc>
     <lastmod>2022-10-31T20:33:11+06:00</lastmod>
   </url><url>
-    <loc>https://underplot.com/dataTile/categories/</loc>
+    <loc>https://underplot.com/dataFude/categories/</loc>
   </url><url>
-    <loc>https://underplot.com/dataTile/press/</loc>
+    <loc>https://underplot.com/dataFude/press/</loc>
   </url><url>
-    <loc>https://underplot.com/dataTile/contact/</loc>
+    <loc>https://underplot.com/dataFude/contact/</loc>
   </url><url>
-    <loc>https://underplot.com/dataTile/pricing/</loc>
+    <loc>https://underplot.com/dataFude/pricing/</loc>
   </url><url>
-    <loc>https://underplot.com/dataTile/privacy/</loc>
+    <loc>https://underplot.com/dataFude/privacy/</loc>
   </url><url>
-    <loc>https://underplot.com/dataTile/tags/</loc>
+    <loc>https://underplot.com/dataFude/tags/</loc>
   </url>
 </urlset>

@@ -10,19 +10,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <!-- Themify -->
-  <link rel="stylesheet" href="https://underplot.com/dataTile/themify/themify.css">
+  <link rel="stylesheet" href="https://underplot.com/dataFude/themify/themify.css">
 
   <!-- Critical CSS -->
   
-  <link href="https://underplot.com/dataTile/scss/critical.min.css" rel="stylesheet" />
+  <link href="https://underplot.com/dataFude/scss/critical.min.css" rel="stylesheet" />
 
   <!-- Tile CSS -->
   
-  <link href="https://underplot.com/dataTile/scss/tile.min.css" rel="stylesheet" />
+  <link href="https://underplot.com/dataFude/scss/tile.min.css" rel="stylesheet" />
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://underplot.com/dataFude/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://underplot.com/dataFude/images/favicon.png" type="image/x-icon" />
   
   
   <meta name="google-site-verification" content="-MFTpOm_Rb_3M7QyUEMHNnp0MXGQHz54IgmPowKs4U8" />
@@ -32,9 +32,9 @@
     <nav class="main-nav navbar navbar-expand-lg">
   <div class="container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand" href="https://underplot.com/dataTile/">
+    <a class="navbar-brand" href="https://underplot.com/dataFude/">
       <img
-        src="https://underplot.com/dataTile/images/tile/tile-logo.png"
+        src="https://underplot.com/dataFude/images/tile/tile-logo.png"
       />
     </a>
     <!-- Toggle Button -->
@@ -55,19 +55,19 @@
       <ul class="navbar-nav ml-auto">
       
         <li class="nav-item menu-Home">
-          <a href="https://underplot.com/dataTile/#hero" class="nav-link ">Home</a>
+          <a href="https://underplot.com/dataFude/#hero" class="nav-link ">Home</a>
         </li>
       
         <li class="nav-item menu-Video">
-          <a href="https://underplot.com/dataTile/#video" class="nav-link ">Video</a>
+          <a href="https://underplot.com/dataFude/#video" class="nav-link ">Video</a>
         </li>
       
         <li class="nav-item menu-Articles">
-          <a href="https://underplot.com/dataTile/#blog" class="nav-link ">Articles</a>
+          <a href="https://underplot.com/dataFude/#blog" class="nav-link ">Articles</a>
         </li>
       
         <li class="nav-item menu-Downloads">
-          <a href="https://underplot.com/dataTile/#download" class="nav-link ">Downloads</a>
+          <a href="https://underplot.com/dataFude/#download" class="nav-link ">Downloads</a>
         </li>
             
       </ul>
@@ -116,7 +116,7 @@
         <div class="post-meta">
           <ul>
             <li>
-              <img src="https://underplot.com/dataTile/images/tile/tile-profile-picture.png" alt="author-thumb" />
+              <img src="https://underplot.com/dataFude/images/tile/tile-profile-picture.png" alt="author-thumb" />
             </li>
             <li>
               <h5>
@@ -139,8 +139,8 @@
       <div class="col-lg-10 mx-auto">
         <article class="blog-single-post">
           <p>If you&rsquo;re usually using <code>print(...)</code> in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use <code>os_log(...)</code> instead.</p>
-<p>Luckily, you can easily create a simple replacement for <code>print()</code> if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!</p>
-<p>Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&hellip;</p>
+<p>Luckily, you can easily create a simple replacement for <code>print()</code> if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataFude!</p>
+<p>Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataFude&hellip;</p>
 <p>Let&rsquo;s have a look at a simple example of how to re-route that data to the logs:</p>
 <pre tabindex="0"><code>import os
 
@@ -149,7 +149,7 @@ func print(_ text: some CustomStringConvertible) {
   os_log(&#34;\(text.description, privacy: .public)&#34;)
   #endif
 }
-</code></pre><p>Now we can easily print the offset of a table view and see some of the data in dataTile:</p>
+</code></pre><p>Now we can easily print the offset of a table view and see some of the data in dataFude:</p>
 <pre tabindex="0"><code>func onScroll(_ offset: CGFloat) {
   print(&#34;Offset: \(offset)&#34;)
 
@@ -162,8 +162,8 @@ func print(_ text: some CustomStringConvertible) {
 
   lastOffset = offset
 }
-</code></pre><p>And, given dataTile is configured to capture data separated by a colon, scrolling through the table will automatically pop some tiles on screen:</p>
-<p><img src="../../images/blog/window-2-tiles.png" alt="width=400 dataTile window"></p>
+</code></pre><p>And, given dataFude is configured to capture data separated by a colon, scrolling through the table will automatically pop some tiles on screen:</p>
+<p><img src="../../images/blog/window-2-tiles.png" alt="width=400 dataFude window"></p>
 
         </article>
       </div>
@@ -175,26 +175,11 @@ func print(_ text: some CustomStringConvertible) {
     </div>
     <footer class="footer" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="footer-subscribe-title">
-          <h2>Subscribe for dataTile updates:</h2>
-        </div>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7k9S/OHY" width="100%"></iframe>
-                
-        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
-        
-        <div style="height:100px;"></div>
-        
-      </div>
-      
-    </div>
+    
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="footer-description">
-          <img src="https://underplot.com/dataTile/images/tile/tile-logo.png" alt="logo" width="200">
+          <img src="https://underplot.com/dataFude/images/tile/tile-logo.png" alt="logo" width="200">
           <p>
               </br>
               Copyright Underplot ltd 2022
@@ -214,9 +199,9 @@ func print(_ text: some CustomStringConvertible) {
           <h4>Sitemap</h4>
           <div class="footer-widget-list">
             <ul>
-              <li><a href="https://underplot.com/dataTile/">Home</a></li>
-              <li><a href="https://underplot.com/dataTile/blog">Announcements & Articles</a></li>
-              <li><a href="https://underplot.com/dataTile/press">Press Kit</a></li>
+              <li><a href="https://underplot.com/dataFude/">Home</a></li>
+              <li><a href="https://underplot.com/dataFude/blog">Announcements & Articles</a></li>
+              <li><a href="https://underplot.com/dataFude/press">Press Kit</a></li>
             </ul>
           </div>
         </div>
@@ -239,12 +224,12 @@ func print(_ text: some CustomStringConvertible) {
 </footer>
 
 
-<link href="https://underplot.com/dataTile/scss/non-critical.min.css" rel="stylesheet" />
+<link href="https://underplot.com/dataFude/scss/non-critical.min.css" rel="stylesheet" />
 
-<script src="https://underplot.com/dataTile/js/vendor.min.js"></script>
+<script src="https://underplot.com/dataFude/js/vendor.min.js"></script>
 
 
-<script src="https://underplot.com/dataTile/js/script.min.js"></script>
+<script src="https://underplot.com/dataFude/js/script.min.js"></script>
 
   </body>
 </html>

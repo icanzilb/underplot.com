@@ -1,127 +1,139 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tile | Forget debugging in the console</title>
-    <link>https://underplot.com/dataTile/</link>
-    <description>Recent content on Tile | Forget debugging in the console</description>
+    <title>dataFude | Debugging with Simulator Logs</title>
+    <link>https://underplot.com/dataFude/</link>
+    <description>Recent content on dataFude | Debugging with Simulator Logs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataTile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataFude/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dataTile for Simulator 1.6</title>
-      <link>https://underplot.com/dataTile/blog/2023-03-23-datatile-1.6/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <title>dataFude 1.7</title>
+      <link>https://underplot.com/dataFude/blog/2023-04-11-datatile-1.7/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2023-03-23-datatile-1.6/</guid>
-      <description>dataTile for Simulator 1.6 is a minor update bringing the following new features:
-The &amp;ldquo;Add new app&amp;rdquo; window now offers autocompletion features that searches in the list of recently used apps and the list of installed apps in the currently running Simulator. Quality of life improvements to the behavior in Welcome window and New App window. Enjoy dataTile for Simulator 1.6!</description>
+      <guid>https://underplot.com/dataFude/blog/2023-04-11-datatile-1.7/</guid>
+      <description>dataFude 1.7 is a minor update bringing the following new features:
+Introduces the first special dataFude syntax! So far dataFude recognizes automatically certain log values — for example Enabled: true or Working: NO are rendered as switch tiles without any special syntax:
+Version 1.7 introduces the first custom syntax that enables a dataFude feature — the $symbol() function renders an SF Symbol for when you need to display a status or action in a more visual way.</description>
     </item>
     
     <item>
-      <title>dataTile for Simulator 1.5</title>
-      <link>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</link>
+      <title>dataFude 1.6</title>
+      <link>https://underplot.com/dataFude/blog/2023-03-23-datatile-1.6/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataFude/blog/2023-03-23-datatile-1.6/</guid>
+      <description>dataFude 1.6 is a minor update bringing the following new features:
+The &amp;ldquo;Add new app&amp;rdquo; window now offers autocompletion features that searches in the list of recently used apps and the list of installed apps in the currently running Simulator. Quality of life improvements to the behavior in Welcome window and New App window. Enjoy dataFude 1.6!</description>
+    </item>
+    
+    <item>
+      <title>dataFude 1.5</title>
+      <link>https://underplot.com/dataFude/blog/2023-03-03-datatile-1.5/</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2023-03-03-datatile-1.5/</guid>
-      <description>dataTile for Simulator 1.5 is a minor update bringing the following new features:
-dataTile for Simulator would now track signpost intervals in Apple&amp;rsquo;s unified log and visualize them in a new kind of timer tile. Repeating intervals display the total time and the number of repeats.
+      <guid>https://underplot.com/dataFude/blog/2023-03-03-datatile-1.5/</guid>
+      <description>dataFude 1.5 is a minor update bringing the following new features:
+dataFude would now track signpost intervals in Apple&amp;rsquo;s unified log and visualize them in a new kind of timer tile. Repeating intervals display the total time and the number of repeats.
 Use Apple&amp;rsquo;s os_signpost or OSLogger APIs to track intervals, like so:
 os_signpost(.begin, log: log, name: &amp;#34;My Activity&amp;#34;) ... os_signpost(.end, log: log, name: &amp;#34;My Activity&amp;#34;) A new preferences tab called &amp;ldquo;Features&amp;rdquo; allows users to turn on and off features.</description>
     </item>
     
     <item>
       <title>Debug SwiftUI with a custom view modifier</title>
-      <link>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</link>
+      <link>https://underplot.com/dataFude/blog/2023-02-27-swiftui-modifier/</link>
       <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2023-02-27-swiftui-modifier/</guid>
-      <description>Logging values and seeing them visualized in dataTile is pretty powerful but the core concept of the app really shines when a developer would automate logs that drive metrics over time.
+      <guid>https://underplot.com/dataFude/blog/2023-02-27-swiftui-modifier/</guid>
+      <description>Logging values and seeing them visualized in dataFude is pretty powerful but the core concept of the app really shines when a developer would automate logs that drive metrics over time.
 Such metrics could be any value that changes over time — the size of the app cache, consumed RAM, or how many instances of a given class are created.
 In this article we&amp;rsquo;ll look into logging how many times a SwiftUI view is re-created.</description>
     </item>
     
     <item>
-      <title>dataTile for Simulator 1.4</title>
-      <link>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</link>
+      <title>dataFude 1.4</title>
+      <link>https://underplot.com/dataFude/blog/2023-02-20-datatile-1.4/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2023-02-20-datatile-1.4/</guid>
-      <description>dataTile for Simulator 1.4 is a minor update bringing a number of quality-of-life improvements to the app:
-When you relaunch your iOS app from Xcode — dataTile for Simulator detects the restart and resets the data in the currently visible tiles so you see only the data since the latest app launch. This improvement relieves the need to add pre-run script to projects — dataTile now detects relaunches and reset the data on its own.</description>
+      <guid>https://underplot.com/dataFude/blog/2023-02-20-datatile-1.4/</guid>
+      <description>dataFude 1.4 is a minor update bringing a number of quality-of-life improvements to the app:
+When you relaunch your iOS app from Xcode — dataFude detects the restart and resets the data in the currently visible tiles so you see only the data since the latest app launch. This improvement relieves the need to add pre-run script to projects — dataFude now detects relaunches and reset the data on its own.</description>
     </item>
     
     <item>
-      <title>dataTile for Simulator launches today!</title>
-      <link>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</link>
+      <title>dataFude launches today!</title>
+      <link>https://underplot.com/dataFude/blog/2023-01-03-datatile-launch/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2023-01-03-datatile-launch/</guid>
-      <description>I&amp;rsquo;m glad to share that dataTile for Simulator is launching today on ProductHunt and the AppStore today!
-dataTile for Simulator is an Xcode companion app to see your debugging data in a beautiful and bold UI. Log your debug data as usual using Apple&amp;rsquo;s logging framework, and dataTile for Simulator will automatically select and display your logs!
+      <guid>https://underplot.com/dataFude/blog/2023-01-03-datatile-launch/</guid>
+      <description>I&amp;rsquo;m glad to share that dataFude is launching today on ProductHunt and the AppStore today!
+dataFude is an Xcode companion app to see your debugging data in a beautiful and bold UI. Log your debug data as usual using Apple&amp;rsquo;s logging framework, and dataFude will automatically select and display your logs!
 It&amp;rsquo;s a powerful native developer tool that is focused on making developers more productive while developing with Xcode and the Simulator.</description>
     </item>
     
     <item>
-      <title>dataTile for Simulator is on TestFlight now!</title>
-      <link>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</link>
+      <title>dataFude is on TestFlight now!</title>
+      <link>https://underplot.com/dataFude/blog/2022-11-28-testflight-beta/</link>
       <pubDate>Mon, 28 Nov 2022 09:43:00 +0200</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2022-11-28-testflight-beta/</guid>
-      <description>Today &amp;ldquo;dataTile for Simulator&amp;rdquo; is available as a public beta on TestFlight.
+      <guid>https://underplot.com/dataFude/blog/2022-11-28-testflight-beta/</guid>
+      <description>Today &amp;ldquo;dataFude&amp;rdquo; is available as a public beta on TestFlight.
 Install the beta version from TestFlight
 The open beta will run through the month of December and all beta testers will have access to Pro features:
-What&amp;rsquo;s available in the beta? Running safely in the mac app sandbox. Reads logs from the Xcode Simulator in real time. Automatically captures relevant log lines and displays the data. Beautiful data visualization.</description>
+What&amp;rsquo;s available in the beta? Running safely in the mac app sandbox. Reads logs from the Xcode Simulator in real time. Automatically captures relevant log lines and displays the data. Beautiful data visualization. Start manually or integrate in your Xcode project with no code changes.</description>
     </item>
     
     <item>
       <title>Beta Available Now!</title>
-      <link>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</link>
+      <link>https://underplot.com/dataFude/blog/2022-11-16-public-beta/</link>
       <pubDate>Wed, 16 Nov 2022 09:43:00 +0200</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2022-11-16-public-beta/</guid>
-      <description>The public beta of dataTile is available today. Download on a mac computer and power up your development with beautiful real-time debug data!
-What&amp;rsquo;s available in the beta? Use dataTile as a beautiful log renderer, instead of using prints. Automatically captures relevant log lines and displays the data. Real-time text or chart visualization. Integrate in your Xcode workflow with no code changes. Download the beta version here</description>
+      <guid>https://underplot.com/dataFude/blog/2022-11-16-public-beta/</guid>
+      <description>The public beta of dataFude is available today. Download on a mac computer and power up your development with beautiful real-time debug data!
+What&amp;rsquo;s available in the beta? Use dataFude as a beautiful log renderer, instead of using prints. Automatically captures relevant log lines and displays the data. Real-time text or chart visualization. Integrate in your Xcode workflow with no code changes. Download the beta version here</description>
     </item>
     
     <item>
       <title>Reroute print() to the unified log system</title>
-      <link>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</link>
+      <link>https://underplot.com/dataFude/blog/2022-10-16-pipe-print-to-logs/</link>
       <pubDate>Wed, 16 Nov 2022 09:42:00 +0200</pubDate>
       
-      <guid>https://underplot.com/dataTile/blog/2022-10-16-pipe-print-to-logs/</guid>
+      <guid>https://underplot.com/dataFude/blog/2022-10-16-pipe-print-to-logs/</guid>
       <description>If you&amp;rsquo;re usually using print(...) in Swift to print debug info to the output console, it might be difficult to fight muscle memory and use os_log(...) instead.
-Luckily, you can easily create a simple replacement for print() if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataTile!
-Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataTile&amp;hellip;</description>
+Luckily, you can easily create a simple replacement for print() if you want to route some of that sweet, sweet debug info to the app logs and from there see them straight in dataFude!
+Additionally, you might have some print statements sprinkled here and there and want to now capture them with dataFude&amp;hellip;</description>
     </item>
     
     <item>
-      <title>dataTile for Simulator — Press Kit</title>
-      <link>https://underplot.com/dataTile/press/</link>
+      <title>dataFude — Press Kit</title>
+      <link>https://underplot.com/dataFude/press/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/press/</guid>
-      <description>Meta Information Name: dataTile for Simulator Available On: Mac App Store Category: Developer Tools Platform: macOS 12 or later Flavors: dataTile Mini (free) and dataTile Pro (2 week trial, then paid subscription) Download: https://apps.apple.com/app/datatile-for-simulator/id6444231603 Contact: support {at} underplot.com Description dataTile for Simulator is an innovative Xcode companion-app to see debugging data in a beautiful and bold UI. Developers log debug data as usual using Apple&amp;rsquo;s logging framework, and dataTile for Simulator automatically selects and displays the logs!</description>
+      <guid>https://underplot.com/dataFude/press/</guid>
+      <description>Meta Information Name: dataFude Available On: Mac App Store Category: Developer Tools Platform: macOS 12 or later Flavors: dataFude is Free. Pro upgrade with 2 week trial, then paid subscription. Download: https://apps.apple.com/app/datatile-for-simulator/id6444231603 Contact: support {at} underplot.com Description dataFude is an innovative Xcode companion-app to see debugging data in a beautiful and bold UI. Developers log debug data as usual using Apple&amp;rsquo;s logging framework, and dataFude automatically selects and displays the logs!</description>
     </item>
     
     <item>
       <title>Pricing Note</title>
-      <link>https://underplot.com/dataTile/pricing/</link>
+      <link>https://underplot.com/dataFude/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/pricing/</guid>
-      <description>dataTile for Mac The app is distributed as a free limited version: dataTile Mini for Mac.
+      <guid>https://underplot.com/dataFude/pricing/</guid>
+      <description>dataFude MAX The app is distributed as a free limited version.
 From the Preferences window users can purchase a MAX license for a duration of 1 year. Once the license expires it does not renew automatically and the app is usable as the free Mini version again.
 Users can choose to renew the license for another year at will.
-dataTile for Simulator The app is distributed as a free limited version: dataTile Mini for Simulator.</description>
+dataFude The app is distributed as a free limited version.
+From the Preferences window users can purchase a Pro subscription which can be billed either monthly or yearly.</description>
     </item>
     
     <item>
       <title>Privacy Note</title>
-      <link>https://underplot.com/dataTile/privacy/</link>
+      <link>https://underplot.com/dataFude/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://underplot.com/dataTile/privacy/</guid>
-      <description>1 Key points Processing of sensitive personal information: dataTile for Simulator does not store or process personal or identifying information. Anonymized usage information: dataTile for Simulator collects anonymous usage data in order to prioritize future development. This data isn&amp;rsquo;t related in any way to the users who generate it. Payments and App Store accounts: When you make a purchase in the app and/or manage your app subscription you are doing this through the services Apple offers on their macOS platform that is installed on your computer.</description>
+      <guid>https://underplot.com/dataFude/privacy/</guid>
+      <description>1 Key points Processing of sensitive personal information: dataFude does not store or process personal or identifying information. Anonymized usage information: dataFude collects anonymous usage data in order to prioritize future development. This data isn&amp;rsquo;t related in any way to the users who generate it. Payments and App Store accounts: When you make a purchase in the app and/or manage your app subscription you are doing this through the services Apple offers on their macOS platform that is installed on your computer.</description>
     </item>
     
   </channel>

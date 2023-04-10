@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>dataFude 1.6</title>
+  <title>dataFude 1.7</title>
 
 
   
@@ -111,7 +111,7 @@
     <div class="row">
       <div class="col-lg-12">
         <h2>
-          dataFude 1.6
+          dataFude 1.7
         </h2>
         <div class="post-meta">
           <ul>
@@ -124,7 +124,7 @@
               </h5>
             </li>
             <li>
-              March 23, 2023
+              April 10, 2023
             </li>
           </ul>
         </div>
@@ -138,18 +138,25 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <article class="blog-single-post">
-          <p><img src="../../images/blog/version-1.6.png" alt="width=300 align=center rounded=0 Version 1.6"></p>
-<p><strong>dataFude 1.6</strong> is a minor update bringing the following new features:</p>
+          <p><img src="../../images/blog/version-1.7.jpg" alt="width=300 align=center rounded=0 Version 1.7"></p>
+<p><strong>dataFude 1.7</strong> is a minor update bringing the following new features:</p>
 <ol>
-<li>The &ldquo;Add new app&rdquo; window now offers autocompletion features that searches in the list of recently used apps and the list of installed apps in the currently running Simulator.</li>
+<li>Introduces the first special dataFude syntax!</li>
 </ol>
-<p><img src="../../images/blog/autocompletion-1.6.jpg" alt="width=691 align=center rounded=0 Auto completion when adding new apps"></p>
+<p>So far dataFude recognizes automatically certain log values — for example <code>Enabled: true</code> or <code>Working: NO</code> are rendered as switch tiles without any special syntax:</p>
+<p><img src="../../images/blog/window-switch.png" alt="width=510 align=center rounded=0 dataFude window with a switch tile"></p>
+<p>Version 1.7 introduces the first custom syntax that enables a dataFude feature — the <code>$symbol()</code> function renders an SF Symbol for when you need to display a status or action in a more visual way.</p>
+<p>Users can use Apple&rsquo;s SF Symbols app to find out the names of thousands of Apple provided SF Symbols: <a href="https://developer.apple.com/sf-symbols/">https://developer.apple.com/sf-symbols/</a></p>
+<p><img src="../../images/blog/sfsymbols-window.png" alt="width=616 align=center rounded=0 SF Symbols"></p>
+<p>Using the new function with the symbol name, log values like: <code>Logged: $symbol(checkmark.seal)</code> or <code>Network: $symbol(flame.fill)</code> and dataFude renders the symbols:</p>
+<p><img src="../../images/blog/symbols-window.jpg" alt="width=811 align=center rounded=0 SF Symbol in dataFude"></p>
 <ol start="2">
-<li>Quality of life improvements to the behavior in Welcome window and New App window.</li>
+<li>Fixes a rare crash in the Knowledge Base window.</li>
+<li>Sets a bigger minimal width for the Knowledge Base window in order to fit most article titles.</li>
 </ol>
 <hr>
-<p>Enjoy <strong>dataFude 1.6</strong>!</p>
-<p><a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12"><img src="../../images/download.png" alt="width=157 align=center rounded=0 Version 1.6"></a></p>
+<p>Enjoy <strong>dataFude 1.7</strong>!</p>
+<p><a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12"><img src="../../images/download.png" alt="width=157 align=center rounded=0 Version 1.7"></a></p>
 
         </article>
       </div>

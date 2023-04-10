@@ -10,19 +10,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <!-- Themify -->
-  <link rel="stylesheet" href="https://underplot.com/dataTile/themify/themify.css">
+  <link rel="stylesheet" href="https://underplot.com/dataFude/themify/themify.css">
 
   <!-- Critical CSS -->
   
-  <link href="https://underplot.com/dataTile/scss/critical.min.css" rel="stylesheet" />
+  <link href="https://underplot.com/dataFude/scss/critical.min.css" rel="stylesheet" />
 
   <!-- Tile CSS -->
   
-  <link href="https://underplot.com/dataTile/scss/tile.min.css" rel="stylesheet" />
+  <link href="https://underplot.com/dataFude/scss/tile.min.css" rel="stylesheet" />
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="https://underplot.com/dataTile/images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://underplot.com/dataFude/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="https://underplot.com/dataFude/images/favicon.png" type="image/x-icon" />
   
   
   <meta name="google-site-verification" content="-MFTpOm_Rb_3M7QyUEMHNnp0MXGQHz54IgmPowKs4U8" />
@@ -32,9 +32,9 @@
     <nav class="main-nav navbar navbar-expand-lg">
   <div class="container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand" href="https://underplot.com/dataTile/">
+    <a class="navbar-brand" href="https://underplot.com/dataFude/">
       <img
-        src="https://underplot.com/dataTile/images/tile/tile-logo.png"
+        src="https://underplot.com/dataFude/images/tile/tile-logo.png"
       />
     </a>
     <!-- Toggle Button -->
@@ -55,19 +55,19 @@
       <ul class="navbar-nav ml-auto">
       
         <li class="nav-item menu-Home">
-          <a href="https://underplot.com/dataTile/#hero" class="nav-link ">Home</a>
+          <a href="https://underplot.com/dataFude/#hero" class="nav-link ">Home</a>
         </li>
       
         <li class="nav-item menu-Video">
-          <a href="https://underplot.com/dataTile/#video" class="nav-link ">Video</a>
+          <a href="https://underplot.com/dataFude/#video" class="nav-link ">Video</a>
         </li>
       
         <li class="nav-item menu-Articles">
-          <a href="https://underplot.com/dataTile/#blog" class="nav-link ">Articles</a>
+          <a href="https://underplot.com/dataFude/#blog" class="nav-link ">Articles</a>
         </li>
       
         <li class="nav-item menu-Downloads">
-          <a href="https://underplot.com/dataTile/#download" class="nav-link ">Downloads</a>
+          <a href="https://underplot.com/dataFude/#download" class="nav-link ">Downloads</a>
         </li>
             
       </ul>
@@ -116,7 +116,7 @@
         <div class="post-meta">
           <ul>
             <li>
-              <img src="https://underplot.com/dataTile/images/tile/tile-profile-picture.png" alt="author-thumb" />
+              <img src="https://underplot.com/dataFude/images/tile/tile-profile-picture.png" alt="author-thumb" />
             </li>
             <li>
               <h5>
@@ -138,7 +138,7 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <article class="blog-single-post">
-          <p>Logging values and seeing them visualized in <a href="https://underplot.com/dataTile#download">dataTile</a> is pretty powerful but the core concept of the app really shines when a developer would automate logs that drive metrics over time.</p>
+          <p>Logging values and seeing them visualized in <a href="https://underplot.com/dataTile#download">dataFude</a> is pretty powerful but the core concept of the app really shines when a developer would automate logs that drive metrics over time.</p>
 <p>Such metrics could be any value that changes over time — the size of the app cache, consumed RAM, or how many instances of a given class are created.</p>
 <p>In this article we&rsquo;ll look into logging how many times a SwiftUI view is re-created. This comes handy when you&rsquo;re trying to track unexpected changes that trigger recreating your SwiftUI views.</p>
 <h3 id="swiftui-view-modifier-counter">SwiftUI view modifier counter</h3>
@@ -186,16 +186,16 @@
 </span></span></code></pre></div><p>The timer updates the &rsquo;time&rsquo; state property with the current time 10 times per second, and the view picks up the new state and displays the time:</p>
 <p><img src="../../images/blog/clock.gif" alt="width=226 align=center rounded=0 Clock ticking"></p>
 <p>When it comes to improving the performance of your app — you might want to verify if the view is redrawn 10 per second (as often as you update the <code>time</code> property) or just once when the <code>time</code> property <em>actually</em> changes value.</p>
-<p>This is where using the new modifier from above comes handy. If you add the <code>debugRender()</code> modifier you&rsquo;ll see the updates in dataTile right away:</p>
+<p>This is where using the new modifier from above comes handy. If you add the <code>debugRender()</code> modifier you&rsquo;ll see the updates in dataFude right away:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Text(time).bold()
 </span></span><span style="display:flex;"><span>  .debugRender(named: <span style="color:#e6db74">&#34;Timer&#34;</span>)
 </span></span></code></pre></div><p><img src="../../images/blog/clock-updates-dataTile.gif" alt="width=537 align=center rounded=0 Clock ticking"></p>
 <p>And to make the data even easier to read — click the tile menu and select &ldquo;View as chart&rdquo; and then click on the tile subtitle to see how many logs per second it displays:</p>
 <p><img src="../../images/blog/clock-chart.png" alt="width=537 align=center rounded=0 Clock ticking"></p>
 <p>And now you have your answer — the tile updates once per second, therefore SwiftUI only recreates the view when the state actually changes.</p>
-<p>What other SwiftUI view modifiers that talk to dataTile would you like to use? Get in touch on <a href="https://twitter.com/icanzilb">https://twitter.com/icanzilb</a> or <a href="https://mastodon.social/@icanzilb">https://mastodon.social/@icanzilb</a>.</p>
+<p>What other SwiftUI view modifiers that talk to dataFude would you like to use? Get in touch on <a href="https://twitter.com/icanzilb">https://twitter.com/icanzilb</a> or <a href="https://mastodon.social/@icanzilb">https://mastodon.social/@icanzilb</a>.</p>
 <hr>
-<p>Download <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12">dataTile for Simulator</a> today.</p>
+<p>Download <a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12">dataFude</a> today.</p>
 
         </article>
       </div>
@@ -207,26 +207,11 @@
     </div>
     <footer class="footer" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="footer-subscribe-title">
-          <h2>Subscribe for dataTile updates:</h2>
-        </div>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7k9S/OHY" width="100%"></iframe>
-                
-        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
-        
-        <div style="height:100px;"></div>
-        
-      </div>
-      
-    </div>
+    
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="footer-description">
-          <img src="https://underplot.com/dataTile/images/tile/tile-logo.png" alt="logo" width="200">
+          <img src="https://underplot.com/dataFude/images/tile/tile-logo.png" alt="logo" width="200">
           <p>
               </br>
               Copyright Underplot ltd 2022
@@ -246,9 +231,9 @@
           <h4>Sitemap</h4>
           <div class="footer-widget-list">
             <ul>
-              <li><a href="https://underplot.com/dataTile/">Home</a></li>
-              <li><a href="https://underplot.com/dataTile/blog">Announcements & Articles</a></li>
-              <li><a href="https://underplot.com/dataTile/press">Press Kit</a></li>
+              <li><a href="https://underplot.com/dataFude/">Home</a></li>
+              <li><a href="https://underplot.com/dataFude/blog">Announcements & Articles</a></li>
+              <li><a href="https://underplot.com/dataFude/press">Press Kit</a></li>
             </ul>
           </div>
         </div>
@@ -271,12 +256,12 @@
 </footer>
 
 
-<link href="https://underplot.com/dataTile/scss/non-critical.min.css" rel="stylesheet" />
+<link href="https://underplot.com/dataFude/scss/non-critical.min.css" rel="stylesheet" />
 
-<script src="https://underplot.com/dataTile/js/vendor.min.js"></script>
+<script src="https://underplot.com/dataFude/js/vendor.min.js"></script>
 
 
-<script src="https://underplot.com/dataTile/js/script.min.js"></script>
+<script src="https://underplot.com/dataFude/js/script.min.js"></script>
 
   </body>
 </html>
