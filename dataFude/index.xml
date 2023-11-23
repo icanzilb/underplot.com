@@ -6,7 +6,20 @@
     <description>Recent content on dataFude | Debugging with Simulator Logs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataFude/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://underplot.com/dataFude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataFude 1.10</title>
+      <link>https://underplot.com/dataFude/blog/2023-11-23-datatile-1.8/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://underplot.com/dataFude/blog/2023-11-23-datatile-1.8/</guid>
+      <description>dataFude 1.10 is an update unlocking all features to all users.
+Currently active subscriptions will not renew at the next billing cycle if users do not cancel manually before the end of their respective billing cycle.
+The Mini and Pro versions of the app become the same free tier version with all features unlocked.
+The in-development MAX version of the app is cancelled.
+Enjoy dataFude 1.10!</description>
+    </item>
+    
     <item>
       <title>dataFude 1.7</title>
       <link>https://underplot.com/dataFude/blog/2023-04-11-datatile-1.7/</link>

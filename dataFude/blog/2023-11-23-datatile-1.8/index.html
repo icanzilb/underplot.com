@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>[NAME] Announcements</title>
+  <title>dataFude 1.10</title>
 
 
   
@@ -78,130 +78,76 @@
     <div id="content">
       
 
-<section class="page-header">
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    for(var i = 0; i < document.images.length; i++){
+      
+      const regexpSize = /width=([0-9]+)/;
+      const match = document.images[i].alt.match(regexpSize);
+      if (!!match) {
+        document.images[i].width = match[1];
+      }
+
+      const rounded = /rounded=([0-1]+)/;
+      const isRounded = document.images[i].alt.match(rounded);
+      if (!!isRounded && isRounded[1]=="0") {
+        document.images[i].style.borderRadius = "0";
+      }
+
+      const align = /align=center/;
+      const alignValue = document.images[i].alt.match(align);
+      if (!!alignValue) {
+        document.images[i].style.display = 'block';
+        document.images[i].style.margin = 'auto';
+      }
+    }
+  });
+</script>
+
+<style>pre {padding: 8px;border-radius: 4px;}</style>
+
+<section class="page-header blog-single-header">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h1>Announcements &amp; Articles</h1>
-        <p>
-          &nbsp;
-        </p>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>
+          dataFude 1.10
+        </h2>
+        <div class="post-meta">
+          <ul>
+            <li>
+              <img src="https://underplot.com/dataFude/images/tile/tile-profile-picture.png" alt="author-thumb" />
+            </li>
+            <li>
+              <h5>
+                Tile Press Release
+              </h5>
+            </li>
+            <li>
+              November 22, 2023
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="blog">
+<section class="blog-single">
   <div class="container">
     <div class="row">
-      
-        <div class="col-lg-4 col-md-6">
-          <article class="blog-post-item">
-            <div class="blog-post-thumb">
-              <a href="https://underplot.com/dataFude/blog/2023-01-03-datatile-launch/">
-                <img src="https://underplot.com/dataFude/images/blog/appstore-screen1.png" alt="blog-thumb"
-              /></a>
-            </div>
-            <div class="blog-post-content">
-              <h2>
-                <a href="https://underplot.com/dataFude/blog/2023-01-03-datatile-launch/"
-                  >dataFude launches today!
-                <p style="font-size:0.33em;font-weight:normal;margin:0;">January 3, 2023</p>
-                </a>
-                
-              </h2>
-              
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-md-6">
-          <article class="blog-post-item">
-            <div class="blog-post-thumb">
-              <a href="https://underplot.com/dataFude/blog/2022-11-28-testflight-beta/">
-                <img src="https://underplot.com/dataFude/images/blog/trial-head.png" alt="blog-thumb"
-              /></a>
-            </div>
-            <div class="blog-post-content">
-              <h2>
-                <a href="https://underplot.com/dataFude/blog/2022-11-28-testflight-beta/"
-                  >dataFude is on TestFlight now!
-                <p style="font-size:0.33em;font-weight:normal;margin:0;">November 28, 2022</p>
-                </a>
-                
-              </h2>
-              
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-md-6">
-          <article class="blog-post-item">
-            <div class="blog-post-thumb">
-              <a href="https://underplot.com/dataFude/blog/2022-11-16-public-beta/">
-                <img src="https://underplot.com/dataFude/images/blog/beta-image.png" alt="blog-thumb"
-              /></a>
-            </div>
-            <div class="blog-post-content">
-              <h2>
-                <a href="https://underplot.com/dataFude/blog/2022-11-16-public-beta/"
-                  >Beta Available Now!
-                <p style="font-size:0.33em;font-weight:normal;margin:0;">November 16, 2022</p>
-                </a>
-                
-              </h2>
-              
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-md-6">
-          <article class="blog-post-item">
-            <div class="blog-post-thumb">
-              <a href="https://underplot.com/dataFude/blog/2022-10-16-pipe-print-to-logs/">
-                <img src="https://underplot.com/dataFude/images/blog/console-image.png" alt="blog-thumb"
-              /></a>
-            </div>
-            <div class="blog-post-content">
-              <h2>
-                <a href="https://underplot.com/dataFude/blog/2022-10-16-pipe-print-to-logs/"
-                  >Reroute print() to the unified log system
-                <p style="font-size:0.33em;font-weight:normal;margin:0;">November 16, 2022</p>
-                </a>
-                
-              </h2>
-              
-            </div>
-          </article>
-        </div>
-      
-      <div class="col-lg-12">
-        <div class="blog-pagination">
-          <nav>
-            
-            
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/dataFude/blog/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/dataFude/blog/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/dataFude/blog/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-          </nav>
-        </div>
+      <div class="col-lg-10 mx-auto">
+        <article class="blog-single-post">
+          <p><img src="../../images/blog/version-1.10.jpg" alt="width=300 align=center rounded=0 Version 1.10"></p>
+<p><strong>dataFude 1.10</strong> is an update unlocking all features to all users.</p>
+<p>Currently active subscriptions will not renew at the next billing cycle if users do not cancel manually before the end of their respective billing cycle.</p>
+<p>The Mini and Pro versions of the app become the same free tier version with all features unlocked.</p>
+<p>The in-development MAX version of the app is cancelled.</p>
+<hr>
+<p>Enjoy <strong>dataFude 1.10</strong>!</p>
+<p><a href="https://apps.apple.com/app/datatile-for-simulator/id6444231603?l=en&amp;mt=12"><img src="../../images/download.png" alt="width=157 align=center rounded=0 Version 1.10"></a></p>
+
+        </article>
       </div>
     </div>
   </div>
